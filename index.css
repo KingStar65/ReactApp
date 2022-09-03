@@ -5,10 +5,16 @@
 .column {
   float: left;
   width: 18%;
-  padding: 20px;
+  padding: 15px;
 }
 .winter {
   float: left;
   height: 510px;
-  padding: 20px;
+  padding: 15px;
+}
+.videos {
+  float: left;
+  height: 460px;
+  width: 38%;
+  padding: 15px;
 }
