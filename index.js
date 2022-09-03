@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <h1> Hello World</h1>
+    <section>
       <Person />
       <Message />
       <Image />
       <Image2 />
       <Image3 />
-    </div>
+      <Image4 />
+      <Image5 />
+    </section>
   );
 }
 
@@ -27,5 +28,28 @@ const Image2 = () => {
 const Image3 = () => {
   return <img src="winterIllus.jpg" alt="winteddr" class="winter"></img>;
 };
+const Image4 = () => {
+  return (
+    <video width="600" height="500" class="column" autoPlay loop muted>
+      <source src="winter wakeup.mp4" type="video/mp4" />
+    </video>
+  );
+};
+const Image5 = () => {
+  return (
+    <div>
+      <iframe
+        class="videos"
+        width="530"
+        height="350"
+        src="https://www.youtube.com/embed/RXdr8YKm0o0?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyr oscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  );
+};
 
-ReactDOM.render(<Greeting />, document.getElementById("root"));
+ReactDOM.render(<BookList />, document.getElementById("root"));
